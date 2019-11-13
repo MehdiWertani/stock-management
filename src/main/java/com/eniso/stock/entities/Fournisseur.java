@@ -10,19 +10,20 @@ import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.List;
 
-@NoArgsConstructor
 @Entity
 @Data
-public class Client implements Serializable {
-    @Id
-    @GeneratedValue
-    private Long idClient;
+@NoArgsConstructor
+public class Fournisseur implements Serializable {
+  @Id
+  @GeneratedValue
+   private  Long idFournisseur;
     private String nom;
     private String prenom;
     private String adresse ;
     private String photo;
     private String mail;
-    @OneToMany(mappedBy="client")
-    private List <CommandeClient> commandeClients;
+    @OneToMany(mappedBy = "fournisseur")
+    private List<CommandeFournisseur> commandeFournisseurs;
+
 
 }

@@ -23,4 +23,5 @@ public class Catagory implements Serializable {
 
     private List<Article> articles;
 
+
 }
