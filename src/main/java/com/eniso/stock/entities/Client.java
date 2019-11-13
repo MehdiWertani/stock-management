@@ -12,6 +12,11 @@ import java.io.Serializable;
 public class Client implements Serializable {
     @Id
     @GeneratedValue
-    private Long IdClient;
+    private Long idClient;
+    private String nom;
+    private String prenom;
+    private String adresse ;
+    private String photo;
+    private String mail;
 
 }
