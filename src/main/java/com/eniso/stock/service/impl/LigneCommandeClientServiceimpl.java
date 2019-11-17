@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service("LigneCommandeClientServiceimpl")
+@Service("LigneCommandeClientServiceImpl")
 public class LigneCommandeClientServiceimpl implements ILigneCommandeClientService {
     ILigneCommandeClientDao iLigneCommandeClientDao ;
         @Autowired
