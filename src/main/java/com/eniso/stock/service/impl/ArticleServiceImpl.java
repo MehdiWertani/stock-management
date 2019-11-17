@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("ArticleServiceImpl")
 public class ArticleServiceImpl implements IArticleService {
     IArticleDao iArticleDao;
      @Autowired
