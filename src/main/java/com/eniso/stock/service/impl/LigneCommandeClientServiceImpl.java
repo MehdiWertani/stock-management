@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service("LigneCommandeClientServiceImpl")
-public class LigneCommandeClientServiceimpl implements ILigneCommandeClientService {
+public class LigneCommandeClientServiceImpl implements ILigneCommandeClientService {
     ILigneCommandeClientDao iLigneCommandeClientDao ;
         @Autowired
-    public LigneCommandeClientServiceimpl(ILigneCommandeClientDao iLigneCommandeClientDao) {
+    public LigneCommandeClientServiceImpl(ILigneCommandeClientDao iLigneCommandeClientDao) {
         this.iLigneCommandeClientDao = iLigneCommandeClientDao;
     }
 
