@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service("ICatagoryServiceImpl")
-public class ICatagoryServiceImpl implements ICatagoryService {
+@Service("CatagoryServiceImpl")
+public class CatagoryServiceImpl implements ICatagoryService {
  ICatagoryDao iCatagoryDao ;
    @Autowired
-    public ICatagoryServiceImpl(ICatagoryDao iCatagoryDao) {
+    public CatagoryServiceImpl(ICatagoryDao iCatagoryDao) {
         this.iCatagoryDao = iCatagoryDao;
     }
 
