@@ -4,9 +4,10 @@ import com.eniso.stock.dao.IFournisseurDao;
 import com.eniso.stock.entities.Fournisseur;
 import com.eniso.stock.service.IFournisseurService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service("FournisseurServiceImpl")
 public class FournisseurServiceImpl implements IFournisseurService {
     IFournisseurDao iFournisseurDao ;
    @Autowired
