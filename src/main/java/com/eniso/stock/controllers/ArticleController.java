@@ -23,12 +23,12 @@ public class ArticleController {
     }
 
     @DeleteMapping("/delete")
-    public void delete(Article article) {
+    public void delete(@RequestBody Article article) {
         iArticleService.delete(article);
     }
 
     @PutMapping("/update")
-    public Article update(Article article) {
+    public Article update(@RequestBody  Article article) {
         return iArticleService.save(article);
     }
 
